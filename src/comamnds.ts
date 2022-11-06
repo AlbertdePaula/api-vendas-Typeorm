@@ -12,8 +12,18 @@ const commands = [
       'yarn add eslint-config-prettier eslint-plugin-prettier -D',
       'yarn add @types/express @types/cors -D',
       'yarn add --dev prettier',
+      'yarn add tsconfig-paths',
+      'yarn add pg',
     ],
 
-    dependencies: ['yarn add express cors express-async-errors'],
+    dependencies: [
+      'yarn add express cors express-async-errors',
+      'yarn add typeorm@0.2.29',
+      'yarn add reflect-metadata',
+    ],
+
+    docker: [
+      'docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d  postgres',
+    ],
   },
 ];
