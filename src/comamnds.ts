@@ -1,6 +1,7 @@
 const commands = [
   {
     tsconfig: [
+      //Configura o tsconfig do projeto;
       'yarn tsc --init --rootDir src --outDir build  --esModuleInterop --resolveJsonModule --lib es6  --module commonjs --allowJs true --noImplicitAny true',
     ],
 
@@ -23,7 +24,12 @@ const commands = [
     ],
 
     docker: [
-      'docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d  postgres',
+      'docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d  postgres', //Cria um container no docker;
+    ],
+
+    typeorm_cli: [
+      'yarn typeorm migration:create -n createProducts', //Cria uma migration;
+      'yarn typeorm migration:run', //Roda uma migration;
     ],
   },
 ];
