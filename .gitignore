@@ -44,4 +44,3 @@ uploads/*
 !uploads/.gitkeep
 
 #My
-ormconfig.json
