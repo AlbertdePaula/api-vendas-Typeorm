@@ -1,0 +1,30 @@
+_id: req_c3194c73508d4ba1a5547a31a240103f
+type: Request
+parentId: fld_c4e12cbe871b477dac5b2ffe6f6a217b
+modified: 1668044763828
+created: 1668044294285
+url: "{{ _.base_url }}/products/6c25a7e0-80b4-4bfc-acc2-9e8147f097b9"
+name: Update
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Bomba de extrume fluorescente vermelha",
+    	"price": 2500,
+    	"quantity": 1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1668044167236
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

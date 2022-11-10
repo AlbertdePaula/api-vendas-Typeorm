@@ -1,0 +1,30 @@
+_id: req_4580fcb08de0449d8cf3111484e6435f
+type: Request
+parentId: fld_c4e12cbe871b477dac5b2ffe6f6a217b
+modified: 1668044854769
+created: 1668044209908
+url: "{{ _.base_url }}/products"
+name: Post
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Bomba de extrume fluorescente verde",
+    	"price": 2500,
+    	"quantity": 1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1668044167336
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
