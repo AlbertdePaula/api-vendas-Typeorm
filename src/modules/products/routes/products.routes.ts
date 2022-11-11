@@ -30,7 +30,26 @@ productsRouter.post(
   productsController.create,
 );
 
-productsRouter.put('/:id', productsController.update);
-productsRouter.delete('/:id', productsController.delete);
+productsRouter.put(
+  '/:id',
+  celebrate({
+    [Segments.PARAMS]: {
+      id: Joi.string().uuid().required(),
+    },
+  }),
+
+  productsController.update,
+);
+
+productsRouter.delete(
+  '/:id',
+  celebrate({
+    [Segments.PARAMS]: {
+      id: Joi.string().uuid().required(),
+    },
+  }),
+
+  productsController.delete,
+);
 
 export default productsRouter;
