@@ -1,0 +1,21 @@
+_id: req_e4a8725b73f94819b07eca24250a4dd7
+type: Request
+parentId: fld_c4e12cbe871b477dac5b2ffe6f6a217b
+modified: 1668044785219
+created: 1668044217341
+url: "{{ _.base_url }}products/"
+name: Delete
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1668044167061
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

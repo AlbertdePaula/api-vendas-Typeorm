@@ -1,0 +1,21 @@
+_id: req_0855b542ca3e4f4184f4b752804f22d2
+type: Request
+parentId: fld_c4e12cbe871b477dac5b2ffe6f6a217b
+modified: 1668044537247
+created: 1668044195052
+url: "{{ _.base_url }}/products/6c25a7e0-80b4-4bfc-acc2-9e8147f097b9"
+name: ShowbyId
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1668044167261
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
