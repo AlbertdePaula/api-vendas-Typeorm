@@ -1,9 +1,9 @@
 _id: req_9769439e95f74935a845cfc6fbc46c6a
 type: Request
 parentId: fld_c4e12cbe871b477dac5b2ffe6f6a217b
-modified: 1668044850195
+modified: 1668226558612
 created: 1668044179165
-url: "{{ _.base_url }}/products/17a7a7dc-2ad4-4400-94d0-539c79ed06e7"
+url: "{{ _.base_url }}/products"
 name: List
 description: ""
 method: GET
