@@ -19,4 +19,14 @@ usersRouter.post(
   usersController.create,
 );
 
+usersRouter.delete(
+  '/:id',
+  celebrate({
+    [Segments.BODY]: {
+      id: Joi.string().uuid().required(),
+    },
+  }),
+  usersController.delete,
+);
+
 export default usersRouter;
