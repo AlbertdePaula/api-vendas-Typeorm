@@ -1,17 +1,17 @@
-_id: req_e4a8725b73f94819b07eca24250a4dd7
+_id: req_762be2ac3cef4ffab435d88bca4cdc0a
 type: Request
-parentId: fld_c4e12cbe871b477dac5b2ffe6f6a217b
-modified: 1668379270476
-created: 1668044217341
-url: "{{ _.base_url }}/products/17a7a7dc-2ad4-4400-94d0-539c79ed06e7"
-name: Delete
+parentId: fld_2a4e11ff93a3469c8fcfcf3af4d72a96
+modified: 1668378385756
+created: 1668376019017
+url: "{{ _.base_url }}/users"
+name: List Users
 description: ""
-method: DELETE
+method: GET
 body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1668044167061
+metaSortKey: -1668376019142
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

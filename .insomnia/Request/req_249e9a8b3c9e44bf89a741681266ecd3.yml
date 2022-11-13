@@ -1,26 +1,26 @@
-_id: req_c3194c73508d4ba1a5547a31a240103f
+_id: req_249e9a8b3c9e44bf89a741681266ecd3
 type: Request
-parentId: fld_c4e12cbe871b477dac5b2ffe6f6a217b
-modified: 1668378558960
-created: 1668044294285
-url: "{{ _.base_url }}/products/6c25a7e0-80b4-4bfc-acc2-9e8147f097b9"
-name: Update
+parentId: fld_2a4e11ff93a3469c8fcfcf3af4d72a96
+modified: 1668380925609
+created: 1668376247783
+url: "{{ _.base_url }}/users/81349593-6ad1-4ce7-8e55-ac13b3df3671"
+name: New Request
 description: ""
 method: PUT
 body:
   mimeType: application/json
   text: |-
     {
-    	"name": "Bomba de extrume fluorescente vermelha",
-    	"price": 2500,
-    	"quantity": 1
+    	"name": "Albert de Paula abreu",
+    	"email": "albert_depaula@yahoo.com.br",
+    	"password": "123456"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
 authentication: {}
-metaSortKey: -1668044167236
+metaSortKey: -1668376019117
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
