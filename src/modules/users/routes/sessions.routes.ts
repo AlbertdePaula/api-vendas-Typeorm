@@ -4,9 +4,9 @@ import { celebrate, Joi, Segments } from 'celebrate';
 const sessionsRouter = Router();
 const sessionsController = new UsersController();
 
-usersRouter.get('/', usersController.index);
+sessionsRouter.get('/', usersController.index);
 
-usersRouter.get(
+sessionsRouter.get(
   '/:id',
   celebrate({
     [Segments.PARAMS]: {
@@ -16,7 +16,7 @@ usersRouter.get(
   usersController.show,
 );
 
-usersRouter.post(
+sessionsRouter.post(
   '/',
   celebrate({
     [Segments.BODY]: {
