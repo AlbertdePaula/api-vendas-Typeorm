@@ -7,6 +7,16 @@ const usersController = new UsersController();
 
 usersRouter.get('/', usersController.index);
 
+usersRouter.get(
+  '/:id',
+  celebrate({
+    [Segments.PARAMS]: {
+      id: Joi.string().uuid().required(),
+    },
+  }),
+  usersController.show,
+);
+
 usersRouter.post(
   '/',
   celebrate({
@@ -19,10 +29,20 @@ usersRouter.post(
   usersController.create,
 );
 
+usersRouter.put(
+  '/:id',
+  celebrate({
+    [Segments.PARAMS]: {
+      id: Joi.string().uuid().required(),
+    },
+  }),
+  usersController.update,
+);
+
 usersRouter.delete(
   '/:id',
   celebrate({
-    [Segments.BODY]: {
+    [Segments.PARAMS]: {
       id: Joi.string().uuid().required(),
     },
   }),

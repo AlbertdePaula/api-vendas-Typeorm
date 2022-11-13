@@ -15,12 +15,14 @@ const commands = [
       'yarn add --dev prettier',
       'yarn add tsconfig-paths',
       'yarn add pg',
+      'yarn add -D @types/bcryptjs',
     ],
 
     dependencies: [
       'yarn add express cors express-async-errors',
       'yarn add typeorm@0.2.29',
       'yarn add reflect-metadata',
+      'yarn add bcryptjs',
     ],
 
     docker: [
