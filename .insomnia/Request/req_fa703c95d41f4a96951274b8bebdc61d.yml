@@ -1,18 +1,17 @@
-_id: req_249e9a8b3c9e44bf89a741681266ecd3
+_id: req_fa703c95d41f4a96951274b8bebdc61d
 type: Request
-parentId: fld_2a4e11ff93a3469c8fcfcf3af4d72a96
-modified: 1668436905289
-created: 1668376247783
-url: "{{ _.base_url }}/users/81349593-6ad1-4ce7-8e55-ac13b3df3671"
-name: Update User
+parentId: fld_34cfe5b885d547a7bd7137665278fa9f
+modified: 1668440234549
+created: 1668437218792
+url: "{{ _.base_url }}/sessions"
+name: AutenticationUser
 description: ""
-method: PUT
+method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"name": "Albert de Paula abreu",
-    	"email": "albert_depaula@yahoo.com.br",
+    	"email": "dao@yahoo.com.br",
     	"password": "123456"
     }
 parameters: []
@@ -20,7 +19,7 @@ headers:
   - name: Content-Type
     value: application/json
 authentication: {}
-metaSortKey: -1668376019117
+metaSortKey: -1668437218792
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
