@@ -16,6 +16,7 @@ const commands = [
       'yarn add tsconfig-paths',
       'yarn add pg',
       'yarn add -D @types/bcryptjs',
+      'yarn add -D jsonwebtoken',
     ],
 
     dependencies: [
