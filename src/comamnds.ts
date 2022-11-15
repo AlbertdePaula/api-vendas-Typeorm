@@ -17,6 +17,7 @@ const commands = [
       'yarn add pg',
       'yarn add -D @types/bcryptjs',
       'yarn add -D jsonwebtoken',
+      'yarn add -D @types/jsonwebtoken',
     ],
 
     dependencies: [
@@ -27,7 +28,7 @@ const commands = [
     ],
 
     docker: [
-      'docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d  postgres', //Cria um container no docker;
+      'docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d  postgres', //Cria o container no docker;
     ],
 
     typeorm_cli: [
