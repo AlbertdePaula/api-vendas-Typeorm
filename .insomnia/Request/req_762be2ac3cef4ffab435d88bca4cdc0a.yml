@@ -1,7 +1,7 @@
 _id: req_762be2ac3cef4ffab435d88bca4cdc0a
 type: Request
 parentId: fld_2a4e11ff93a3469c8fcfcf3af4d72a96
-modified: 1668378385756
+modified: 1668993358981
 created: 1668376019017
 url: "{{ _.base_url }}/users"
 name: List Users
@@ -10,7 +10,9 @@ method: GET
 body: {}
 parameters: []
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1668376019142
 isPrivate: false
 settingStoreCookies: true
