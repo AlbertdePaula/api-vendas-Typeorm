@@ -1,17 +1,16 @@
-_id: req_588bff9975f74fdc813605e25a6cf546
+_id: req_acd255ae1793430ba441daf16b6535ab
 type: Request
-parentId: fld_2a4e11ff93a3469c8fcfcf3af4d72a96
-modified: 1668648509311
-created: 1668376166486
-url: "{{ _.base_url }}/users"
-name: Create User
+parentId: fld_1cfbdda848064e1c956984baa0f3348f
+modified: 1668993338098
+created: 1668382234170
+url: "{{ _.base_url }}/sessions"
+name: CreateSession
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"name": "AlbertDev",
     	"email": "albert_dev@yahoo.com.br",
     	"password": "Apa3521"
     }
@@ -19,8 +18,11 @@ parameters: []
 headers:
   - name: Content-Type
     value: application/json
-authentication: {}
-metaSortKey: -1668376019267
+authentication:
+  type: bearer
+  token: "{{ _.base_url }}"
+  disabled: false
+metaSortKey: -1668382234170
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
