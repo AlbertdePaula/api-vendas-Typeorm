@@ -7,9 +7,12 @@ export default class UserAvatarController {
 
     const user = updateAvatar.execute({
       user_id: request.user.id,
+      //@ts-ignore
       avatarFileName: request.file.filename,
     });
 
     return response.json(user);
   }
 }
+
+//To commit
