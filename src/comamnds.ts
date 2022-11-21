@@ -18,6 +18,7 @@ const commands = [
       'yarn add -D @types/bcryptjs',
       'yarn add -D jsonwebtoken',
       'yarn add -D @types/jsonwebtoken',
+      'yarn add -D @types/multer',
     ],
 
     dependencies: [
@@ -25,6 +26,7 @@ const commands = [
       'yarn add typeorm@0.2.29',
       'yarn add reflect-metadata',
       'yarn add bcryptjs',
+      'yarn add multer',
     ],
 
     docker: [
