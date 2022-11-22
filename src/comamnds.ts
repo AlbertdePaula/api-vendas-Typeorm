@@ -27,6 +27,7 @@ const commands = [
       'yarn add reflect-metadata',
       'yarn add bcryptjs',
       'yarn add multer',
+      'yarn add date-fns',
     ],
 
     docker: [
