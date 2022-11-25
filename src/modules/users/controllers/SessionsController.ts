@@ -15,5 +15,3 @@ export default class SessionsController {
     return response.json(user);
   }
 }
-
-//Para commitar;

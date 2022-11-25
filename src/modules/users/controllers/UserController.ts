@@ -10,7 +10,7 @@ export default class UsersController {
     const listUser = new ListUsersService();
 
     // eslint-disable-next-line no-console
-    console.log(request.user.id);
+    console.log(`IdUser is: ${request.user.id}`);
 
     const users = await listUser.execute();
 
