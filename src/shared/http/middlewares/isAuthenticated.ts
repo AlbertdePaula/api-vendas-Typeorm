@@ -26,7 +26,7 @@ export default function isAuthenticated(
     const decodedToken = verify(token, authConfig.jwt.secret);
 
     // eslint-disable-next-line no-console
-    //console.log(decodedToken);
+    console.log(decodedToken);
 
     const { sub } = decodedToken as ITokenPayload;
 

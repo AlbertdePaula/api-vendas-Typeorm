@@ -5,7 +5,7 @@ import ResetPasswordcontroller from '../controllers/ResetPasswordController';
 
 const passwordRouter = Router();
 const forgotPesswordController = new ForgotPasswordcontroller();
-const resetPasswordcontroller = new ResetPasswordcontroller();
+const resetPasswordController = new ResetPasswordcontroller();
 
 passwordRouter.post(
   '/forgot',
@@ -26,7 +26,7 @@ passwordRouter.post(
       password_confirmation: Joi.string().required().valid(Joi.ref('password')),
     },
   }),
-  resetPasswordcontroller.create,
+  resetPasswordController.create,
 );
 
 export default passwordRouter;

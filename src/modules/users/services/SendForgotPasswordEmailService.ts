@@ -24,7 +24,7 @@ class SendForgotPasswordEmailService {
     const token = await userTokensRepository.generate(user.id);
 
     // eslint-disable-next-line no-console
-    console.log(token);
+    console.log(token); //mostrar dados no console
   }
 }
 
