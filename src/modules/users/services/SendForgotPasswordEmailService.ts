@@ -2,6 +2,7 @@ import AppError from '@shared/errors/AppError';
 import { getCustomRepository } from 'typeorm';
 import UsersRepository from '../typeorm/repositories/UserRepository';
 import UsersTokensRepository from '../typeorm/repositories/UserTokensRepository';
+import EtherialMail from '@config/mail/EtherealMail';
 
 interface IRequest {
   email: string;
@@ -25,6 +26,11 @@ class SendForgotPasswordEmailService {
 
     // eslint-disable-next-line no-console
     console.log(token); //mostrar dados no console
+
+    await EtherialMail.sendMail({
+      to: email,
+      body: `Solicitação de redefinição de senha recebida: ${token?.token}`,
+    });
   }
 }
 
