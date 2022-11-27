@@ -1,7 +1,7 @@
 _id: req_f00075bd223a43459426bb4e90d052b4
 type: Request
 parentId: fld_2a4e11ff93a3469c8fcfcf3af4d72a96
-modified: 1668993384948
+modified: 1669482103468
 created: 1668993102743
 url: "{{ _.base_url }}/users/avatar"
 name: Avatar
@@ -16,7 +16,7 @@ body:
       description: ""
       type: file
       multiline: null
-      fileName: C:\Users\Albert\Desktop\legiao_Ry1hNJoxOzpY.jpg.webp
+      fileName: G:\Documentos\2013-07-08_00001.jpg
 parameters: []
 headers:
   - name: Content-Type
@@ -24,7 +24,7 @@ headers:
     id: pair_e4105fb4867240b799eff62682219c4d
 authentication:
   type: bearer
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njg5OTMzMzksImV4cCI6MTY2OTA3OTczOSwic3ViIjoiYzM1MzE0MzItODdlNC00OGMwLTk0MDYtM2ExZDg3ZDA1ZWVjIn0.NfbjPy4oqf49Fq78SnEUATz19AhVv-Us950EsnwCbTI
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njk0ODIwNDUsImV4cCI6MTY2OTQ4MjY0NSwic3ViIjoiMjQ1YzkzM2QtZTAyOS00MjAwLThlNTYtMTgxMTM4ZThjN2ZlIn0.Gh9QtgOHlJLmw4lQTtZ2hhE7MRgu1MQMzw286c5Gus4
 metaSortKey: -1668376019317
 isPrivate: false
 settingStoreCookies: true
