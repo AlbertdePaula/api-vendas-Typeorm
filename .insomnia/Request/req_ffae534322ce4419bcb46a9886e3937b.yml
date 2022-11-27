@@ -1,18 +1,17 @@
-_id: req_fa703c95d41f4a96951274b8bebdc61d
+_id: req_ffae534322ce4419bcb46a9886e3937b
 type: Request
-parentId: fld_34cfe5b885d547a7bd7137665278fa9f
-modified: 1669495782449
-created: 1668437218792
-url: "{{ _.base_url }}/sessions"
-name: AutenticationUser
+parentId: fld_cf7bf5a89ea04dbeaebf7345d77362d6
+modified: 1669483116030
+created: 1669176482655
+url: "{{ _.base_url }}/password/forgot"
+name: Forgot
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"email": "albert_dev@yahoo.com.br",
-    	"password": "123123"
+    	"email": "albert_dev@yahoo.com.br"
     }
 parameters: []
 headers:
@@ -20,8 +19,8 @@ headers:
     value: application/json
 authentication:
   type: bearer
-  token: ""
-metaSortKey: -1668437218792
+  token: "{{ _.token }}"
+metaSortKey: -1669176482655
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

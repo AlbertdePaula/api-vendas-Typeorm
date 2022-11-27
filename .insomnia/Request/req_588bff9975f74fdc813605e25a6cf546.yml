@@ -1,7 +1,7 @@
 _id: req_588bff9975f74fdc813605e25a6cf546
 type: Request
 parentId: fld_2a4e11ff93a3469c8fcfcf3af4d72a96
-modified: 1668648509311
+modified: 1669482141273
 created: 1668376166486
 url: "{{ _.base_url }}/users"
 name: Create User
@@ -13,7 +13,7 @@ body:
     {
     	"name": "AlbertDev",
     	"email": "albert_dev@yahoo.com.br",
-    	"password": "Apa3521"
+    	"password": "3521"
     }
 parameters: []
 headers:
