@@ -3,6 +3,7 @@ import { getCustomRepository } from 'typeorm';
 import UsersRepository from '../typeorm/repositories/UserRepository';
 import UsersTokensRepository from '../typeorm/repositories/UserTokensRepository';
 import EtherialMail from '@config/mail/EtherealMail';
+import path from 'path';
 
 interface IRequest {
   email: string;
@@ -24,8 +25,15 @@ class SendForgotPasswordEmailService {
 
     const { token } = await userTokensRepository.generate(user.id);
 
+    const forgotPasswordTemplate = path.resolve(
+      __dirname,
+      '..',
+      'views',
+      'forgot_password.hbs',
+    );
+
     // eslint-disable-next-line no-console
-    console.log(token); //mostrar dados no console
+    //console.log(token); //mostrar dados no console
 
     await EtherialMail.sendMail({
       to: {
@@ -34,10 +42,10 @@ class SendForgotPasswordEmailService {
       },
       subject: '[API Vendas] Recuperação de Senha',
       templateData: {
-        template: `Olá {{name}}: {{token}}`,
+        file: forgotPasswordTemplate,
         variables: {
           name: user.name,
-          token,
+          link: `http://localhost:3000/reset_password?token=${token}`,
         },
       },
     });
