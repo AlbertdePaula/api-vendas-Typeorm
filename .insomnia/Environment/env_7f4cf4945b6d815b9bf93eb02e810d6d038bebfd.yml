@@ -1,12 +1,12 @@
 _id: env_7f4cf4945b6d815b9bf93eb02e810d6d038bebfd
 type: Environment
 parentId: wrk_43197b8b93104c36a0425f5798da9904
-modified: 1669482119391
+modified: 1669736387037
 created: 1668043954103
 name: Base Environment
 data:
   base_url: http://localhost:3333
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njk0ODIwNDUsImV4cCI6MTY2OTQ4MjY0NSwic3ViIjoiMjQ1YzkzM2QtZTAyOS00MjAwLThlNTYtMTgxMTM4ZThjN2ZlIn0.Gh9QtgOHlJLmw4lQTtZ2hhE7MRgu1MQMzw286c5Gus4
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Njk3MzYzNzEsImV4cCI6MTY2OTc0MzU3MSwic3ViIjoiYmIwZTg4NTgtZTlmNS00NjBlLTk2MjUtZGY2ZTQ3NTFkZjQ4In0.dXXtsUJHs0kLL07KTl0l9r7fL-mVjv4Oz3h83-9ph1A
 dataPropertyOrder:
   "&":
     - base_url

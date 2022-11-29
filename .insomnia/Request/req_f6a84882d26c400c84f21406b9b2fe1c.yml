@@ -1,18 +1,22 @@
-_id: req_fa703c95d41f4a96951274b8bebdc61d
+_id: req_f6a84882d26c400c84f21406b9b2fe1c
 type: Request
-parentId: fld_34cfe5b885d547a7bd7137665278fa9f
-modified: 1669736369872
-created: 1668437218792
-url: "{{ _.base_url }}/sessions"
-name: AutenticationUser
+parentId: fld_9c912cbc19f74499aa53a0b369a9db85
+modified: 1669736625986
+created: 1669735792148
+url: "{{ _.base_url }}/profile"
+name: Update
 description: ""
-method: POST
+method: PUT
 body:
   mimeType: application/json
   text: |-
     {
+    	"name": "Joao",
     	"email": "albert_dev@yahoo.com.br",
-    	"password": "3521"
+    	"password": "352",
+    	"password_confirmation": "352",
+    	"old_password": "12345"
+    	
     }
 parameters: []
 headers:
@@ -20,9 +24,8 @@ headers:
     value: application/json
 authentication:
   type: bearer
-  token: ""
-  disabled: true
-metaSortKey: -1668437218792
+  token: "{{ _.token }}"
+metaSortKey: -1669734644722
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
