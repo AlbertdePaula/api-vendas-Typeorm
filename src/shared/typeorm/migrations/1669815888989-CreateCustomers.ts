@@ -20,7 +20,6 @@ export class CreateCustomers1669815888989 implements MigrationInterface {
           {
             name: 'email',
             type: 'varchar',
-            isUnique: true,
           },
           {
             name: 'created_at',
