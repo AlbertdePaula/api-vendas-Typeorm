@@ -1,10 +1,10 @@
-_id: req_762be2ac3cef4ffab435d88bca4cdc0a
+_id: req_bd11ac53b5634581893efbbaec260320
 type: Request
-parentId: fld_2a4e11ff93a3469c8fcfcf3af4d72a96
-modified: 1669734732242
-created: 1668376019017
-url: "{{ _.base_url }}/users"
-name: List Users
+parentId: fld_9c912cbc19f74499aa53a0b369a9db85
+modified: 1669734722996
+created: 1669734644672
+url: "{{ _.base_url }}/profile"
+name: Show
 description: ""
 method: GET
 body: {}
@@ -13,7 +13,7 @@ headers: []
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1668376019142
+metaSortKey: -1669734644672
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
