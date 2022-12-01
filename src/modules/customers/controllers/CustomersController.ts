@@ -5,7 +5,7 @@ import ListCustomerService from '../services/ListCustomerService';
 import ShowCustomerService from '../services/ShowCustomerService';
 import UpdateCustomerService from '../services/UpdateCustomerService';
 
-export default class CustomerController {
+export default class CustomersController {
   public async create(request: Request, response: Response): Promise<Response> {
     const { name, email } = request.body;
 

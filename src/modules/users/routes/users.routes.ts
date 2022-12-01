@@ -64,5 +64,3 @@ usersRouter.patch(
 );
 
 export default usersRouter;
-
-//To commit
