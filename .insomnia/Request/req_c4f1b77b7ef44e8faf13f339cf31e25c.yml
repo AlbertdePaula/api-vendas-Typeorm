@@ -1,22 +1,18 @@
-_id: req_f6a84882d26c400c84f21406b9b2fe1c
+_id: req_c4f1b77b7ef44e8faf13f339cf31e25c
 type: Request
-parentId: fld_9c912cbc19f74499aa53a0b369a9db85
-modified: 1669906651822
-created: 1669735792148
-url: "{{ _.base_url }}/profile"
-name: Update
+parentId: fld_f9f8cfe53ab4453e987cae16d1b1aa7e
+modified: 1669992692930
+created: 1669899446368
+url: "{{ _.base_url }}/customers"
+name: NewCustomer
 description: ""
-method: PUT
+method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"name": "Joao",
-    	"email": "albert_dev@yahoo.com.br",
-    	"password": "352",
-    	"password_confirmation": "352",
-    	"old_password": "12345"
-    	
+    	"name": "LinusTorvalds",
+    	"email": "torrvalds@yahoo.com.br"
     }
 parameters: []
 headers:
@@ -25,7 +21,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1669734644722
+metaSortKey: -1669899446368
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

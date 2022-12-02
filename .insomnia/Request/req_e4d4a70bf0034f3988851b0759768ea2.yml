@@ -1,28 +1,23 @@
-_id: req_fa703c95d41f4a96951274b8bebdc61d
+_id: req_e4d4a70bf0034f3988851b0759768ea2
 type: Request
-parentId: fld_34cfe5b885d547a7bd7137665278fa9f
-modified: 1669990580538
-created: 1668437218792
-url: "{{ _.base_url }}/sessions"
-name: AutenticationUser
+parentId: fld_f9f8cfe53ab4453e987cae16d1b1aa7e
+modified: 1669993112393
+created: 1669992713251
+url: "{{ _.base_url }}/customers/f5e8667d-9add-4a5c-84b2-64136df19008"
+name: ShowCustomer
 description: ""
-method: POST
+method: GET
 body:
   mimeType: application/json
-  text: |-
-    {
-    	"email": "albert_dev@yahoo.com.br",
-    	"password": "3521"
-    }
+  text: ""
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
 authentication:
   type: bearer
-  token: ""
-  disabled: true
-metaSortKey: -1668437218792
+  token: "{{ _.token }}"
+metaSortKey: -1669899446386.75
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
