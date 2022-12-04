@@ -33,7 +33,7 @@ export default class CustomersController {
     const listCustomers = new ListCustomerService();
 
     // eslint-disable-next-line no-console
-    console.log(`IdUser is: ${request.customer.id}`);
+    //console.log(`IdUser is: ${request.customer.id}`);
 
     const customers = await listCustomers.execute();
 
