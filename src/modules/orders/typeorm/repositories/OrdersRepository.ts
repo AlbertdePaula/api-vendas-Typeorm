@@ -15,10 +15,7 @@ interface IRequest {
 
 @EntityRepository(Order)
 export class OrdersRepository extends Repository<Order> {
-  static findByName(id: string) {
-    throw new Error('Method not implemented.');
-  }
-  public async findByName(id: string): Promise<Order | undefined> {
+  public async findById(id: string): Promise<Order | undefined> {
     const order = this.findOne(id, {
       relations: ['order_products', 'customer'],
     });
